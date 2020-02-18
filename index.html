@@ -9,9 +9,10 @@
   <body>
     <h1>Volunteer Form</h1>
     <form action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method= "post">
+
     <fieldset>
 
-      <legend>My Information</legend>
+      <legend> My Information </legend>
       <p><label>First Name: <input type = "text" name = "first_name_field" placeholder="Enter your first name"></label></p>
       <p><label>Last Name: <input type = "text" name = "last_name_field" placeholder="Enter your last name"></label></p>
       <p><label>Phone Number: <input type = "text" name = "phone_field" placeholder="Enter your phone number"></label></p>
@@ -20,7 +21,7 @@
       <p><label>Gender: <input type = "radio" name = "gender_field" value="Female"></label></p>
       <p><label>Gender: <input type = "radio" name = "gender_field" value="Male"></label></p>
 
-      <p><label>Age:</label></p>
+      <p><label>Age:</label>
         <select name = "age_field">
           <option>value=""*Select your age group*</option>
           <option>value="under 18"Under 18</option>
@@ -31,13 +32,27 @@
           <option>value="55-65"55-64</option>
           <option>value="65 and over"65 and over</option>
         </select>
+      </p>
 
     </fieldset>
 
+    <fieldset>
+      <legend> My Availability </legend>
+      <p><label>What days are you available?</label></p>
+      <p><label>Sunday<input type = "checkbox" name = "available_field[]" value ="Sunday"></label></p>
+      <p><label>Monday<input type = "checkbox" name = "available_field[]" value ="Monday"></label></p>
+      <p><label>Tuesday<input type = "checkbox" name = "available_field[]" value ="Tuesday"></label></p>
+      <p><label>Wednesday<input type = "checkbox" name = "available_field[]" value ="Wednesday"></label></p>
+      <p><label>Thursday<input type = "checkbox" name = "available_field[]" value ="Thursday"></label></p>
+      <p><label>Friday<input type = "checkbox" name = "available_field[]" value ="Friday"></label></p>
+      <p><label>Saturday<input type = "checkbox" name = "available_field[]" value ="Saturday"></label></p>
 
+      <p><label>Any Comments? <textarea name = "comment_field"></textarea><label></p>
 
+      <input type ="hidden" name = "hidden_field" value = "npatel127">
+    </fieldset>
 
-      <input type = "submit" value = "Send Me">
+    <input type = "submit" value = "Send Me">
 
     </form>
   </body>
